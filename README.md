@@ -1,6 +1,9 @@
 # My First Git Project
 
-Đây là project đầu tiên để học Git/GitHub
+CUỐI KÌ GIT-GITHUB
+Họ và tên: Trần Trường Huy
+MSSV: DH52200809
+Lớp: thứ 5 - ca 1
 
 ## Mục tiêu
 - Học các lệnh Git cơ bản
