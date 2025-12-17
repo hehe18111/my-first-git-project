@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng đến với project đầu tiên!</h1>
+        <p>Đây là trang web đơn giản để học Git/GitHub</p>
+        <button onclick="fetchData()">Lấy dữ liệu từ Backend</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('/api/data');
+                const data = await response.json();
+                document.getElementById('result').innerHTML = `<p>Dữ liệu: ${data.message}</p>`;
+            } catch (error) {
+                document.getElementById('result').innerHTML = `<p>Lỗi: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
