@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Thông tin sinh viên</h1>
+        <h1>Bài Ktra - DH52200809</h1>
       </header>
 
       <main className="main-content">
